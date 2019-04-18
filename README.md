@@ -156,6 +156,38 @@ There is an easy way to transform Collections into Arrays **Collection.toArray(I
     
 Because the compiler will not be able to choose between both of the options.
 
+#### Predicate
+
+Predice now allows to use RegExp from Pattern class and to negate using method reference
+
+Examples on _PredicateShould_
+
+#### IO Nullified
+
+Sometimes there is a need to use input/output without a real implementation but the constructor like
+
+    FileInputStream(null)
+    
+Throws **NullPointerException**, this is no longer a problem because now in J11 there a set of null implementations.
+
+Calling read()/skip()/transferTo() methods on the returned input streams behave as end of the stream has reached.
+
+Calling write()/append()/flush() methods on the returned output streams do nothing.
+
+After a stream has been closed, calling read/write methods will throw IOException.
+
+Examples on _IONullShould_
+
+#### Path
+
+Instead of **Path.get()** there is now a method **Path.of**, this is a renaming.
+
+#### Optional
+
+**Optional.isEmpty()** is now available as part of the API. So we don't have to negate **Optional.isPresent()**
+
+Examples on _OptionalShould_
+
 #### HttpClient
 
 Now Java offers an standard HttpClient, not sure which pro & cons it does have, maybe for very simple scenarios it suits perfectly but not sure how it handles retries, circuit breakers, etc...
