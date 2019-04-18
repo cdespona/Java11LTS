@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3169753c-05cc-4151-b987-0e04d242928b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/cde/pg/StringShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cde/pg/HttpClientShould.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cde/pg/CollectionsShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cde/pg/CollectionsShould.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -77,8 +78,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="542">
-                <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+              <first_editor relative-caret-position="483">
+                <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
@@ -86,10 +87,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/HttpClientShould.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/java/jdk-11.0.1_windows-x64_bin/jdk-11.0.1/lib/src.zip!/java.base/java/nio/charset/Charset.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="524" column="26" selection-start-line="524" selection-start-column="26" selection-end-line="524" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/StringShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="364">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#657#658#0" expanded="true" />
@@ -133,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/CollectionsShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="529">
+              <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,13 +210,14 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/docker-compose.10jdk.yml" />
         <option value="$PROJECT_DIR$/src/test/java/cde/pg/OptionalShould.java" />
-        <option value="$PROJECT_DIR$/src/test/java/cde/pg/CollectionsShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/GraalExample.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/Blender.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/cde/pg/StringShould.java" />
+        <option value="$PROJECT_DIR$/src/test/java/cde/pg/CollectionsShould.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/cde/pg/HttpClientShould.java" />
       </list>
     </option>
   </component>
@@ -218,17 +241,6 @@
             <path>
               <item name="Java11LTS" type="b2602c69:ProjectViewProjectNode" />
               <item name="Java11LTS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java11LTS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java11LTS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java11LTS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java11LTS" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Java11LTS" type="b2602c69:ProjectViewProjectNode" />
@@ -315,33 +327,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StringShould">
+  <component name="RunManager" selected="JUnit.HttpClientShould">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Java11LTS [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="jar" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="OptionalShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CollectionsShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java11LTS.test" />
       <extension name="coverage">
         <pattern>
@@ -350,7 +343,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cde.pg" />
-      <option name="MAIN_CLASS_NAME" value="cde.pg.OptionalShould" />
+      <option name="MAIN_CLASS_NAME" value="cde.pg.CollectionsShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HttpClientShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java11LTS.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cde.pg.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cde.pg" />
+      <option name="MAIN_CLASS_NAME" value="cde.pg.HttpClientShould" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -425,11 +434,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HttpClientShould" />
+        <item itemvalue="JUnit.CollectionsShould" />
         <item itemvalue="JUnit.StringShould" />
         <item itemvalue="JUnit.StringShould.split_lines_from_an_string" />
         <item itemvalue="JUnit.StringShould.repeat_as_many_times_as_we_ask_for_it" />
-        <item itemvalue="Gradle.Java11LTS [jar]" />
-        <item itemvalue="JUnit.OptionalShould" />
       </list>
     </recent_temporary>
   </component>
@@ -443,29 +452,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555518833216</updated>
-      <workItem from="1555518835587" duration="16189000" />
+      <workItem from="1555518835587" duration="17801000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="OptionalShould - 2019.04.18 at 10h 20m 34s.xml">
-      <configuration name="OptionalShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalShould - 2019.04.18 at 10h 21m 00s.xml">
-      <configuration name="OptionalShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OptionalShould - 2019.04.18 at 10h 22m 35s.xml">
-      <configuration name="OptionalShould" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringShould_repeat_as_many_times_as_we_ask_for_it - 2019.04.18 at 12h 35m 21s.xml">
-      <configuration name="StringShould.repeat_as_many_times_as_we_ask_for_it" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringShould_repeat_as_many_times_as_we_ask_for_it - 2019.04.18 at 12h 37m 33s.xml">
-      <configuration name="StringShould.repeat_as_many_times_as_we_ask_for_it" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="StringShould - 2019.04.18 at 12h 37m 38s.xml">
-      <configuration name="StringShould" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="StringShould - 2019.04.18 at 12h 39m 51s.xml">
       <configuration name="StringShould" configurationId="JUnit" />
     </history-entry>
@@ -478,16 +469,35 @@
     <history-entry file="StringShould - 2019.04.18 at 12h 41m 48s.xml">
       <configuration name="StringShould" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CollectionsShould - 2019.04.18 at 12h 54m 21s.xml">
+      <configuration name="CollectionsShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionsShould - 2019.04.18 at 12h 55m 10s.xml">
+      <configuration name="CollectionsShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionsShould - 2019.04.18 at 12h 55m 24s.xml">
+      <configuration name="CollectionsShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionsShould - 2019.04.18 at 13h 01m 08s.xml">
+      <configuration name="CollectionsShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CollectionsShould - 2019.04.18 at 13h 01m 29s.xml">
+      <configuration name="CollectionsShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HttpClientShould - 2019.04.18 at 13h 11m 50s.xml">
+      <configuration name="HttpClientShould" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16189000" />
+    <option name="totallyTimeSpent" value="17801000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3832" y="30" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -500,7 +510,7 @@
       <window_info anchor="bottom" id="Build" weight="0.32984293" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32984293" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32984293" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -595,16 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/CollectionsShould.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gradlew">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-270" />
@@ -646,24 +646,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/StringShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/CollectionsShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="45" column="61" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="542">
-            <caret line="148" column="25" selection-start-line="148" selection-start-column="25" selection-end-line="148" selection-end-column="25" />
+          <first_editor relative-caret-position="483">
+            <caret line="162" column="13" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/StringShould.java">
+    <entry file="jar://C:/java/jdk-11.0.1_windows-x64_bin/jdk-11.0.1/lib/src.zip!/java.base/java/nio/charset/Charset.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="331">
+          <caret line="524" column="26" selection-start-line="524" selection-start-column="26" selection-end-line="524" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/cde/pg/HttpClientShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="76" selection-start-line="23" selection-start-column="76" selection-end-line="23" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
           </folding>
         </state>
       </provider>

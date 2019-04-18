@@ -148,3 +148,18 @@ New methods have been added into the String API. Apache commons, Oracle is after
 
 Examples on _StringShould_
 
+#### Collections
+
+There is an easy way to transform Collections into Arrays **Collection.toArray(IntFunction)**. However there was another method **Collection.toArray(T[])**, that means we cannot use it now as follows
+
+    Collection.toArray(null);
+    
+Because the compiler will not be able to choose between both of the options.
+
+#### HttpClient
+
+Now Java offers an standard HttpClient, not sure which pro & cons it does have, maybe for very simple scenarios it suits perfectly but not sure how it handles retries, circuit breakers, etc...
+
+What's sure, it is build on top of the reactive java API so it can work asynchronously.
+
+Examples on _HttpClientShould_
