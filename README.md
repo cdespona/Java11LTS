@@ -114,6 +114,16 @@ To use the top tier Compiler
 
     javac GraalExample.java
     java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler GraalExample
+    
+To add more iterations
+    
+    -Diterations=N
+
+To print the graal compilations
+
+    -Dgraal.PrintCompilation=true
+    
+There is another example that blends colors from black into _Blender_
 
 ## Java 11
 
