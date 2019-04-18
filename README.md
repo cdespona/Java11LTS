@@ -15,6 +15,21 @@ Examples on _TypeInferenceShould_
 
 Java defines a server class machine as having 2 CPUs and 2GB of memory and the default heap size is ¼ of the physical memory.
 
+This just works with Linux based containers.
+
+This new support is enabled by default and can be disabled in the command line with the JVM option:
+
+    -XX:-UseContainerSupport
+    
+Also, this change adds a JVM option that provides the ability to specify the number of CPUs that the JVM will use:
+
+    -XX:ActiveProcessorCount=count
+Also, three new JVM options have been added to allow Docker container users to gain more fine-grained control over the amount of system memory that will be used for the Java Heap:
+
+    -XX:InitialRAMPercentage
+    -XX:MaxRAMPercentage
+    -XX:MinRAMPercentage
+
 **Real World** - Java 8 since version 191 is also aware, I guess this is because this is the most used version at the moment.
 Evidence [JDK8Release191](https://www.oracle.com/technetwork/java/javase/8all-relnotes-2226344.html#R180_191)
 
@@ -40,6 +55,17 @@ With Java 10
     docker-java-home/bin/java -XX:+PrintFlagsFinal -version | grep MaxHeapSize
        size_t MaxHeapSize                              = 268435456                                {product} {ergonomic}
     
+#### Collections
+
+**List/Set/Map.copyOf** and **Collectors.toUnmodifiableList()**, **Collectors.toUnmodifiableSet()** and **Collectors.toUnmodifiableMap()** options added to create unmodifiable lists either from already existing Lists or streams.
+
+Examples on _CollectionsShould_
+
+#### Optional
+
+**Optional.orElseThrow()** is now the preferred collect option over **Optional.get()**
+
+Examples on _OptionalShould_
 
 
 ## Java 11
