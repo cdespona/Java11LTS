@@ -3,6 +3,8 @@ Playground for java 9,10,11 LTS
 
 ## Java 10
 
+### Developer Experience
+
 #### Type Inference
 
 This feature is available only for local variables with the initializer. It cannot be used for member variables, method parameters, return types, etc – the initializer is required as without which compiler won’t be able to infer the type.
@@ -67,6 +69,51 @@ Examples on _CollectionsShould_
 
 Examples on _OptionalShould_
 
+### Performance
+
+#### Parallel Full GC for G1
+
+In Java 9 G1 was made the default GC but it was running on **single threaded mark-sweep-compact** algorithm it is now changed to **parallel** reducing the stop-the-world timings.
+
+#### Application Class-Data Sharing
+
+Allows a set of classes to be pre-processed into a shared archive file that can then be memory-mapped at runtime to reduce startup time which can also reduce dynamic memory footprint when multiple JVMs share the same archive file.
+
+**List the classes to archive**
+
+    java -Xshare:off -XX:DumpLoadedClassList=app.lst -cp ./build/libs/Java11LTS-1.0-SNAPSHOT.jar HelloWorld
+    
+**Create AppCDS archive**
+
+    java -Xshare:dump -XX:SharedClassListFile=app.lst -XX:SharedArchiveFile=app.jsa -cp ./build/libs/Java11LTS-1.0-SNAPSHOT.jar
+    
+**Use AppCDS archive**
+
+    java -Xshare:on -XX:SharedArchiveFile=app.jsa -cp ./build/libs/Java11LTS-1.0-SNAPSHOT.jar HelloWorld
+    
+#### Java Based JIT Compiler
+
+Graal is a dynamic compiler written in Java that integrates with the HotSpot JVM; it’s focused on high performance and extensibility. It’s also the basis of the experimental Ahead-of-Time (AOT) compiler introduced in JDK 9.
+
+JDK 10 enables the Graal compiler, to be used as an experimental JIT compiler on the Linux/x64 platform.
+
+To enable it:
+
+    -XX:+UnlockExperimentalVMOptions -XX:+UseJVMCICompiler
+    
+Let's use an example provided by [GraalVM](https://www.graalvm.org/docs/examples/java-performance-examples/) themselves, it can be found in our source code _GraalExample_.
+
+The example is based on the Streams API to demonstrate performance of the Graal compiler. This example counts the number of upper case characters in a body of text. To simulate a large load, the same sentence is processed 10 million times
+
+To use Graal provided by Java
+
+    javac GraalExample.java
+    java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler GraalExample
+    
+To use the top tier Compiler
+
+    javac GraalExample.java
+    java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler GraalExample
 
 ## Java 11
 
