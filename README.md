@@ -107,12 +107,12 @@ The example is based on the Streams API to demonstrate performance of the Graal 
 
 To use Graal provided by Java
 
-    javac GraalExample.java
+    javac GraalExample.java (this is not needed in J11)
     java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:+UseJVMCICompiler GraalExample
     
 To use the top tier Compiler
 
-    javac GraalExample.java
+    javac GraalExample.java (this is not needed in J11)
     java -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCI -XX:-UseJVMCICompiler GraalExample
     
 To add more iterations
@@ -127,6 +127,8 @@ There is another example that blends colors from black into _Blender_
 
 ## Java 11
 
+### Developer experience
+
 #### Type Inference
 
 From this point on Java 11 allows us to use type inference into lambda definition like:
@@ -134,3 +136,15 @@ From this point on Java 11 allows us to use type inference into lambda definitio
     (var something) -> something.do()
 
 Examples on _TypeInferenceShould_
+
+#### Strings
+
+New methods have been added into the String API. Apache commons, Oracle is after you.
+
+* repeat
+* strip
+* isBlank ;)
+* lines
+
+Examples on _StringShould_
+
