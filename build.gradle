@@ -20,4 +20,5 @@ dependencies {
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.12.2'
 }
