@@ -226,6 +226,12 @@ Examples on _HttpClientShould_
 
 Some other examples with Synchronous, asynchronous and reactive rest calls are included into _http/WikipediaSearch_
 
+### Performance
+
+#### New Garbage Collectors
+
+1) [Epsilon](https://openjdk.java.net/jeps/318) (No-Op)
+2) [ZGC](https://openjdk.java.net/jeps/333) New algorithm maximum 10ms allocation, with 15% trade off performance compared with G1.
 
 ### Main Removals
 
