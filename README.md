@@ -25,7 +25,7 @@ Based on that we can say we can choose between 3 options:
 
 ## Java 10
 
-[Release notes](https://www.oracle.com/technetwork/java/javase/10-relnote-issues-4108729.html)
+[Release notes](https://www.oracle.com/technetwork/java/javase/10all-relnotes-4108743.html)
 
 Is the first version iteration where the 6 months release happened.
 
@@ -59,7 +59,7 @@ Also, three new JVM options have been added to allow Docker container users to g
     -XX:MinRAMPercentage
 
 **Real World** - Java 8 since version 191 is also aware, I guess this is because this is the most used version at the moment.
-Evidence [JDK8Release191](https://www.oracle.com/technetwork/java/javase/10all-relnotes-4108743.html)
+Evidence [JDK8Release191](https://www.oracle.com/technetwork/java/javase/8all-relnotes-2226344.html#R180_191)
 
 With latest openJDK Java 8
     
