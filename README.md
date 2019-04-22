@@ -25,6 +25,8 @@ Based on that we can say we can choose between 3 options:
 
 ## Java 10
 
+[Release notes](https://www.oracle.com/technetwork/java/javase/10-relnote-issues-4108729.html)
+
 Is the first version iteration where the 6 months release happened.
 
 ### Developer Experience
@@ -57,7 +59,7 @@ Also, three new JVM options have been added to allow Docker container users to g
     -XX:MinRAMPercentage
 
 **Real World** - Java 8 since version 191 is also aware, I guess this is because this is the most used version at the moment.
-Evidence [JDK8Release191](https://www.oracle.com/technetwork/java/javase/8all-relnotes-2226344.html#R180_191)
+Evidence [JDK8Release191](https://www.oracle.com/technetwork/java/javase/10all-relnotes-4108743.html)
 
 With latest openJDK Java 8
     
@@ -151,9 +153,27 @@ There is another example that blends colors from black into _Blender_
 
 ### Main Removals
 
-TODO
+These removal were marked as deprecated from Java 1.1 and 1.2.
+
+**Fields**
+
+    java.lang.SecurityManager.inCheck
+
+**Methods**
+
+    java.lang.Runtime.getLocalizedInputStream(java.io.InputStream)
+    java.lang.Runtime.getLocalizedOutputStream(java.io.OutputStream)
+    java.lang.SecurityManager.classDepth(java.lang.String)
+    java.lang.SecurityManager.classLoaderDepth()
+    java.lang.SecurityManager.currentClassLoader()
+    java.lang.SecurityManager.currentLoadedClass()
+    java.lang.SecurityManager.getInCheck()
+    java.lang.SecurityManager.inClass(java.lang.String)
+    java.lang.SecurityManager.inClassLoader()
 
 ## Java 11
+
+[Release notes](https://www.oracle.com/technetwork/java/javase/11-relnotes-5012447.html)
 
 ### Developer experience
 
@@ -235,4 +255,37 @@ Some other examples with Synchronous, asynchronous and reactive rest calls are i
 
 ### Main Removals
 
-TODO
+* Removal of com.sun.awt.AWTUtilities Class 
+* Removal of Lucida Fonts from Oracle JDK 
+* Removal of appletviewer Launcher 
+* Oracle JDK's javax.imageio JPEG Plugin No Longer Supports Images with alpha
+* Removal of sun.misc.Unsafe.defineClass 
+
+    _Users should use the public replacement, java.lang.invoke.MethodHandles.Lookup.defineClass, added in Java SE 9_
+    
+* Removal of Thread.destroy() and Thread.stop(Throwable) Methods 
+
+    _Thread.stop() is unaffected by this change_
+    
+* Removal of sun.nio.ch.disableSystemWideOverlappingFileLockCheck Property
+* Removal of sun.locale.formatasdefault Property 
+* Removal of JVM-MANAGEMENT-MIB.mib
+* Removal of SNMP Agent 
+    
+    _As a result, the following com.sun.management.snmp.* properties are no-op when set by using the -D option or the management.properties configuration._
+    
+* Removal of Java Deployment Technologies
+
+    _Note that the Java Control Panel, which was used for configuring the deployment technologies, has also been removed along with the shared system JRE (but not the server JRE) and the JRE Auto Update mechanism_
+    
+* Removal of JMC (Mission Control) from the Oracle JDK. 
+
+    _Exists an standalone version compatible with oracleJDK and openJDK_
+    
+* Removal of JavaFX from the Oracle JDK.
+
+    _Will be available as separate modules_
+    
+* JEP 320 Remove the Java EE and CORBA Modules.
+
+    _JAXB, JAX-WS, CORBA... out of the JDK, so no SOAP, no XML binding_ 
