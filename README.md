@@ -13,7 +13,7 @@ Each new version is released every 6 months (March and September).
 
 Each release is delivered at the same time as OpenJDK and OracleJDK, however OpenJDK will just receive updates during the 6 month window the version is live, while the OracleJDK LTS will keep receiving the updates for 3 years, plus the extended support.
 
-There are some other vendors creating its own **INCLUDE VENDORS HERE** JDK, no sure which fares do they have. One of them **WHICH ONE** is fully free based on the openJDK but it depends on their good will to keep it updated. 
+There are some other vendors creating its own JDK like **RedHat** (RedHat JDK), **Azul** (Zulu JDK), no sure which fares do they have. One of them [**AdoptOpenJDK**](https://adoptopenjdk.net/) is fully free based on the openJDK but it depends on their good will to keep it updated. 
 
 From Java 9 onwards was the first time Java really remove features from the JDK, which means Java is not backwards compatible anymore.
 
