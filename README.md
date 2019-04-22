@@ -1,7 +1,31 @@
 # Java LTS
 Playground for java 9,10,11 LTS
 
+## Oracle License
+
+From now on Java has to be payed for its production usage, any other purpose is free to go.
+
+LTS happens every 3 years, current one is Java 11 LTS. Java 9 and Java 10 are already abandoned.
+
+Support roadmap can be checked [here](https://www.oracle.com/technetwork/java/java-se-support-roadmap.html)
+
+Each new version is released every 6 months (March and September).
+
+Each release is delivered at the same time as OpenJDK and OracleJDK, however OpenJDK will just receive updates during the 6 month window the version is live, while the OracleJDK LTS will keep receiving the updates for 3 years, plus the extended support.
+
+There are some other vendors creating its own **INCLUDE VENDORS HERE** JDK, no sure which fares do they have. One of them **WHICH ONE** is fully free based on the openJDK but it depends on their good will to keep it updated. 
+
+From Java 9 onwards was the first time Java really remove features from the JDK, which means Java is not backwards compatible anymore.
+
+Based on that we can say we can choose between 3 options:
+
+1) Keep using an old Java version, like J8. This way we can keep using it for **free** and it remains **stable**, but you must say goodbye to **security** patches.
+2) Use the OpenJDK, which means we can use it for **free** in production and it gets the **security** updates for 6 months, but we would need to upgrade to the newer versions losing potential **stability**.
+3) **Pay** the OracleJDK license, so you can get **stability** for 3 years..., and you keep getting the **security** updates without moving to newer versions.   
+
 ## Java 10
+
+Is the first version iteration where the 6 months release happened.
 
 ### Developer Experience
 
@@ -125,6 +149,10 @@ To print the graal compilations
     
 There is another example that blends colors from black into _Blender_
 
+### Main Removals
+
+TODO
+
 ## Java 11
 
 ### Developer experience
@@ -190,8 +218,15 @@ Examples on _OptionalShould_
 
 #### HttpClient
 
-Now Java offers an standard HttpClient, not sure which pro & cons it does have, maybe for very simple scenarios it suits perfectly but not sure how it handles retries, circuit breakers, etc...
+Now Java offers an standard HttpClient, not sure which pro & cons it does have in detail, maybe for very simple scenarios it suits perfectly but not sure how it handles retries, circuit breakers, etc...
 
 What's sure, it is build on top of the reactive java API so it can work asynchronously.
 
 Examples on _HttpClientShould_
+
+Some other examples with Synchronous, asynchronous and reactive rest calls are included into _http/WikipediaSearch_
+
+
+### Main Removals
+
+TODO
