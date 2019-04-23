@@ -2,8 +2,7 @@ package cde.pg;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class StringShould {
 
@@ -32,5 +31,28 @@ class StringShould {
                 .count();
 
         assertEquals(4L, lineCount);
+    }
+
+    @Test
+    void unicode() {
+        var emostring = "😂😍🎉👍";
+        char charAtEmoji = emostring.charAt(1);
+        assertNotEquals("😍", charAtEmoji);
+
+        System.out.println("Not enough bits for charAt "+ charAtEmoji);
+        //An emoji takes more than 16-bits, but a char can just handle 16-bits
+
+        var emoji = new StringBuilder()
+                .appendCodePoint(
+                        emostring
+                                .codePointAt(emostring.offsetByCodePoints(0, 1)
+                                )
+                ).toString();
+
+        String subStrEmoji = emostring.substring(1, 2);
+        assertNotEquals("😍", subStrEmoji);
+        System.out.println("Not enough bits for subString "+ subStrEmoji);
+
+        assertEquals("😍", emoji);
     }
 }
