@@ -63,14 +63,14 @@ Evidence [JDK8Release191](https://www.oracle.com/technetwork/java/javase/8all-re
 
 With latest openJDK Java 8
     
-    docker container run -it -m=1G --entrypoint sh java:openjdk-8u111-jdk-alpine
+    docker container run -it -m1G --entrypoint bash openjdk:8-jdk
     
     root@74f1f0094b0d:/# docker-java-home/bin/java -XX:+PrintFlagsFinal -version | grep MaxHeapSize
         uintx MaxHeapSize                              := 268435456                           {product}
         
 With old openJDK Java 8
     
-    docker container run -it -m1G --entrypoint bash openjdk:8-jdk
+    docker container run -it -m=1G --entrypoint sh java:openjdk-8u111-jdk-alpine
     
     java -XX:+PrintFlagsFinal -version | grep MaxHeapSize
         uintx MaxHeapSize                              := 520093696                           {product}
